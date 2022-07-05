@@ -31,12 +31,17 @@ const Home: NextPage = () => {
           alignItems="center"
           gap="2"
           bg={"#121618"}
-          p="10px 80px"
+          p={{ md: "10px 80px", base: "10px 30px" }}
         >
           <Box p="2">
             <Heading m="0" color={"#fff"} display={"flex"} fontSize={"20px"}>
-              <FaPizzaSlice color="#fac564" />
-              Pizza
+              <Flex>
+                <Box me="5px" mt="5px">
+                  {" "}
+                  <FaPizzaSlice color="#fac564" fontSize={"20px"} />
+                </Box>
+                Pizza
+              </Flex>
             </Heading>
             <Text m={0} color="#fac564" letterSpacing={4}>
               {" "}
@@ -44,6 +49,7 @@ const Home: NextPage = () => {
             </Text>
           </Box>
           <Spacer />
+
           <Box>
             {" "}
             <HStack spacing={8} alignItems={"center"}>

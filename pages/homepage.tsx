@@ -139,7 +139,7 @@ export default function Homepage() {
           h="100%"
           bg={"#0000009e"}
         >
-          <Box textAlign={"center"} maxW="50%">
+          <Box textAlign={"center"} maxW={{ md: "50%", base: "75%" }}>
             <Text
               fontSize={"30px"}
               color="#fac564"
@@ -200,12 +200,12 @@ export default function Homepage() {
                   display={"flex"}
                   mx={10}
                   mt="5px"
-                  fontSize="20px"
+                  fontSize="25px"
                 >
                   {element.icon}
                 </Box>
                 <Box>
-                  <Heading color={"#fff"} m="0" fontSize="18px">
+                  <Heading color={"#f3dbdb"} m="0" fontSize="18px">
                     {element.title}
                   </Heading>
 
