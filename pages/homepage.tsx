@@ -59,24 +59,32 @@ export default function Homepage() {
       icon: <FaPhoneAlt />,
       title: "000 (123) 456 7890",
       description: "A small river named Duden flows",
+    },
+    {
+      icon: <MdMyLocation />,
+      title: "198 West 21th Street",
+      description: "Suite 721 New York NY 10016",
+    },
+    {
+      icon: <MdAccessTimeFilled />,
+      title: "Open Monday-Friday",
+      description: "8:00am - 9:00pm",
+    },
+  ];
+  const offers = [
+    {
       pizza: "/pizza-1.jpg",
       meal: "Italian Pizza",
       mealdescription:
         "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
     },
     {
-      icon: <MdMyLocation />,
-      title: "198 West 21th Street",
-      description: "Suite 721 New York NY 10016",
       pizza: "/pizza-2.jpg",
       meal: "Greek Pizza",
       mealdescription:
         "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
     },
     {
-      icon: <MdAccessTimeFilled />,
-      title: "Open Monday-Friday",
-      description: "8:00am - 9:00pm",
       pizza: "/pizza-3.jpg",
       meal: "Caucasian Pizza",
       mealdescription:
@@ -101,7 +109,6 @@ export default function Homepage() {
         "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
     },
   ];
-
   return (
     <Box>
       {" "}
@@ -161,6 +168,7 @@ export default function Homepage() {
                 border={"1px solid #fca564"}
                 mx="10px"
                 variant="solid"
+                mb={"20px"}
               >
                 Check
               </Button>
@@ -168,11 +176,12 @@ export default function Homepage() {
                 variant="outline"
                 p="16px 24px"
                 border={"1px solid #fca564"}
+                mb={"20px"}
                 mx="10px"
                 bg="transparent"
                 color={"#fff"}
               >
-                Call us
+                Callus
               </Button>
             </Box>
           </Box>
@@ -229,7 +238,7 @@ export default function Homepage() {
             gap={0}
             mt="20px"
           >
-            {details.map((items, i) => (
+            {offers.map((items, i) => (
               <GridItem w="100%" bg="#00000059" mb={"20px"} key={i}>
                 <Flex>
                   <Box
