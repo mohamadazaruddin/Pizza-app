@@ -53,11 +53,12 @@ const Home: NextPage = () => {
                 display={{ base: "none", md: "flex" }}
                 p="0"
               >
-                {Links.map((link) => (
+                {Links.map((link, i) => (
                   <Link
                     px={"20px"}
                     py={1}
                     rounded={"md"}
+                    key={i}
                     _hover={{
                       textDecoration: "none",
                       color: "#fac564",

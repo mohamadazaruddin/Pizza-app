@@ -230,7 +230,7 @@ export default function Homepage() {
             mt="20px"
           >
             {details.map((items, i) => (
-              <GridItem w="100%" bg="#00000059" mb={"20px"}>
+              <GridItem w="100%" bg="#00000059" mb={"20px"} key={i}>
                 <Flex>
                   <Box
                     backgroundImage={items.pizza}
