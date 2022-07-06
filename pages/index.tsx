@@ -15,7 +15,6 @@ import styles from "../styles/Home.module.css";
 import { FaPizzaSlice } from "react-icons/fa";
 import Homepage from "./homepage";
 const Links = ["Home", "Menu", "Services", "Blog", "About", "Contact"];
-
 const Home: NextPage = () => {
   return (
     <Box>
