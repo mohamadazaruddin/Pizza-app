@@ -227,7 +227,7 @@ export default function Homepage() {
         backgroundSize={"cover"}
       >
         <Box textAlign={"center"}>
-          <Heading color="#fff">HOT PIZZA MEALS</Heading>
+          <Heading color="#fff">HOT PIZZA MEALS We Have</Heading>
           <Text color="gray" mt="20px">
             Far far away, behind the word mountains, far from the countries
             Vokalia <br />
